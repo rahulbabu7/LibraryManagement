@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+group = 'librarymanagement'
+version = '1.0'
+
+application {
+    mainClass = 'librarymanagement.App'
+    // applicationDefaultJvmArgs = ['--enable-preview']
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
